@@ -71,9 +71,3 @@ class ProductManager {
   console.log(productById);
   
   const nonExistentProduct = productManager.getProductById(3); // Producto no existente
-
-
-  
-  
-  
-  

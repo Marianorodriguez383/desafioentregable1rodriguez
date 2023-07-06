@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Producto 1",
+    "description": "Descripción del producto A",
+    "price": 20000,
+    "thumbnail": "ruth/productoA.jpg",
+    "code": 1,
+    "stock": 10,
+    "id": 1
+  },
+  {
+    "title": "Producto B",
+    "description": "Descripción del producto B",
+    "price": 1000,
+    "thumbnail": "ruth/imagenB.jpg",
+    "code": 2,
+    "stock": 3,
+    "id": 1
+  }
+]
