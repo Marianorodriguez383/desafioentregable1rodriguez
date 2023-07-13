@@ -1,6 +1,6 @@
 import fs from 'fs';
 
-class ProductManager {
+export default class ProductManager {
   constructor(filePath) {
     this.path = filePath;
     this.products = [];
@@ -100,38 +100,3 @@ class ProductManager {
   }
 }
 
-// Ejemplo de uso
-const productManager = new ProductManager('products.json');
-
-// Agregar productos
-productManager.addProduct({
-  title: 'Producto 1',
-  description: 'Descripción del producto A',
-  price: 15000,
-  thumbnail: 'ruth/productoA.jpg',
-  code: 1,
-  stock: 5,
-});
-
-productManager.addProduct({
-  title: 'Producto B',
-  description: 'Descripción del producto B',
-  price: 1000,
-  thumbnail: 'ruth/imagenB.jpg',
-  code: 2,
-  stock: 3,
-});
-
-// Obtener todos los productos
-const allProducts = productManager.getProducts();
-console.log(allProducts);
-
-// Obtener producto por id
-const productById = productManager.getProductById(1);
-console.log(productById);
-
-// Actualizar producto
-productManager.updateProduct(1, { price: 20000, stock: 10 });
-
-// Eliminar producto
-productManager.deleteProduct(2);
